@@ -1,0 +1,248 @@
+body {
+  font-family: sans-serif;
+}
+
+.containerwrap {
+  padding: 20px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.title {
+  margin-top: 40px;
+  display: inline-block;
+  border-radius: 25px;
+  background-color: gold;
+  padding-top: 16px!important;
+}
+
+.title1 {
+  font-size: 46px;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 12px;
+  color: rgb(118, 38, 34);
+}
+
+.title2 {
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 8px;
+  color: rgb(118, 38, 34);
+}
+
+.logoIndo {
+  justify-self: start;
+  width: 240px;
+}
+
+.logoUMN {
+  justify-self: start;
+  width: 80px;
+}
+
+.logoF4 {
+  border-radius: 100%;
+  justify-self: end;
+  width: 180px;
+  transition: 0.3s;
+}
+
+.logoF4:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 10px 12px gold;
+}
+
+.inputName {
+  margin-top: 100px;
+  text-align: center;
+}
+
+input {
+  width: 400px;
+  height: 100px;
+  font-size: 48px;
+  text-align: center;
+  outline: 4px solid black;
+  background: lightgoldenrodyellow;
+  transition: 0.3s;
+}
+
+input:focus {
+  transition: 0.3s;
+  box-shadow: 0 0 10px 10px gold;
+}
+
+.start {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.startBtn {
+  width: 100px;
+  height: 60px;
+  padding: 6px;
+  font-size: 20px;
+  border-radius: 8px;
+  color: black;
+  background: lightgoldenrodyellow;
+  border: 4px solid black !important;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+.startBtn:hover {
+  color: rgb(214, 153, 0) !important;
+  border-radius: 50px;
+  border-color: rgb(214, 153, 0) !important;
+  transition: all 0.3s ease 0s;
+}
+
+.backBtn {
+  width: 100px;
+  height: 60px;
+  padding: 6px;
+  font-size: 20px;
+  border-radius: 8px;
+  color: black;
+  background: lightgoldenrodyellow;
+  border: 4px solid black !important;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+.backBtn:hover {
+  color: rgb(214, 153, 0) !important;
+  border-radius: 50px;
+  border-color: rgb(214, 153, 0) !important;
+  transition: all 0.3s ease 0s;
+}
+
+.select {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  width: 30%;
+}
+.select select {
+  font-family: "Arial";
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 14px 18px;
+  outline: 0;
+  border: 3px solid #000000;
+  border-radius: 0px;
+  background: #ffffff;
+  color: #7b7b7b;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: lightgoldenrodyellow;
+}
+.select select::-ms-expand {
+  display: none;
+}
+.select select:hover,
+.select select:focus {
+  color: #000000;
+  background: #cccccc;
+}
+.select select:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.select_arrow {
+  position: absolute;
+  top: 24px;
+  right: 15px;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 5px 0px 5px;
+  border-color: #7b7b7b transparent transparent transparent;
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+  border-top-color: #000000;
+}
+.select select:disabled ~ .select_arrow {
+  border-top-color: #cccccc;
+}
+
+.lostmsg {
+  display: inline-block;
+  background-color: gold;
+  color: rgb(118, 38, 34);
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 12px;
+}
+
+@media (min-height: 900px) {
+  .logoIndo {
+    width: 320px;
+  }
+
+  .logoUMN {
+    width: 130px;
+  }
+
+  .logoF4 {
+    width: 210px;
+  }
+
+  .inputName {
+    margin-top: 200px;
+  }
+
+  input {
+    width: 450px;
+    height: 120px;
+  }
+
+  .start {
+    margin-top: 80px;
+  }
+
+  .startBtn {
+    width: 180px;
+    height: 80px;
+    font-size: 40px;
+  }
+
+  .backBtn {
+    width: 180px;
+    height: 80px;
+    font-size: 32px;
+  }
+
+  .title {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .title1{
+    font-size: 64px;
+  }
+
+  .title2{
+    font-size: 42px;
+  }
+
+  .select {
+    width: 50%;
+    font-size: 24px;
+  }
+
+  .containerwrap {
+    padding: 20px 10px;
+  }
+
+  .select select {
+    font-size: 16px;
+  }
+}
